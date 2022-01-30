@@ -19,7 +19,7 @@ public class UserController {
     this.repository = repository;
   }
 
-  @GetMapping("/uer")
+  @GetMapping("/hello")
   public Iterable<User> user() {
     // CrudRepository の メソッドが使える
     return repository.findAll();
