@@ -1,0 +1,3 @@
+INSERT INTO employee (first_name, last_name, birthday, gender, email, phone, address, employee_type, join_date) values ('山田', '太郎', '2000-01-01', 1, 'taro.dev@gmail.com', '08012345678', '愛知県名古屋市中村区', 1, '2021-12-01');
+INSERT INTO employee (first_name, last_name, birthday, gender, email, phone, address, employee_type, join_date) values ('田中', 'はな子', '2000-02-01', 2, 'hanako.dev@gmail.com', '08098765432', '東京都渋谷区', 2, '2021-11-01');
+INSERT INTO employee (first_name, last_name, birthday, gender, email, phone, address, employee_type, join_date) values ('松', '高子', '2000-03-01', 3, 'matsu.dev@gmail.com', '09012349876', '福岡県博多区', 3, '2022-01-01');
