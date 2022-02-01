@@ -16,8 +16,8 @@ import lombok.NoArgsConstructor;
 public class Shift {
 
   @Id
-  private Long shift_id;
-  private Long employee_id;
+  private int shift_id;
+  private int employee_id;
   private Date join_date_time;
   private Date leaving_date_time;
 

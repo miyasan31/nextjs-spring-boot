@@ -16,15 +16,15 @@ import lombok.NoArgsConstructor;
 public class Employee {
 
   @Id
-  private Long employee_id;
+  private int employee_id;
   private String first_name;
   private String last_name;
   private Date birthday;
-  private int sex;
+  private int gender;
   private String phone;
   private String email;
   private String address;
-  private String employee_type;
+  private int employee_type;
   private Date join_date;
   private Date leaving_date;
 

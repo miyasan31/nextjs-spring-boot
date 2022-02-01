@@ -16,8 +16,8 @@ import lombok.NoArgsConstructor;
 public class Attendance {
 
   @Id
-  private Long atendance_id;
-  private Long employee_id;
+  private int atendance_id;
+  private int employee_id;
   private Date join_date_time;
   private Date leaving_date_time;
   
