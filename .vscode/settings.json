@@ -15,5 +15,12 @@
   "explorer.sortOrderLexicographicOptions": "unicode",
   "explorer.sortOrder": "type",
 
-  "eslint.validate": ["json", "javascript", "javascriptreact", "typescript", "typescriptreact"]
+  "eslint.validate": [
+    "json",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["./client"]
 }

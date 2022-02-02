@@ -13,6 +13,7 @@ module.exports = {
     ecmaVersion: 2021, // es12と同義（envで設定してるから自動でそれになる）
     sourceType: "module",
     project: "./tsconfig.json",
+    extraFileExtensions: ".mjs",
   },
   // rulesのデフォルト設定を行えるもの
   // 他のオプションを拡張できるもの
@@ -28,7 +29,7 @@ module.exports = {
     "react", // これパッケージ名（"eslint-plugin-react"でも可）
     "react-hooks",
     "simple-import-sort",
-    "tailwindcss",
+    // "tailwindcss",
   ],
   rules: {
     semi: ["error", "always"],
@@ -97,9 +98,9 @@ module.exports = {
 
     // tailwindcssのドキュメント
     // https://www.npmjs.com/package/eslint-plugin-tailwind
-    "tailwindcss/classnames-order": "warn",
+    // "tailwindcss/classnames-order": "warn",
     // "tailwindcss/no-custom-classname": "warn",
-    "tailwindcss/no-contradicting-classname": "error",
+    // "tailwindcss/no-contradicting-classname": "error",
 
     // @typescript-eslintのドキュメント
     // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
