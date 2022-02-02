@@ -1,48 +1,36 @@
+# server ===============================================
 # Ignore Gradle project-specific cache directory
 .gradle
-
 # Ignore Gradle build output directory
 build
-
 /server/**/*.class
-
 .DS_Store
 
 
-# client
+
+# client ===============================================
 
 # dependencies
 client/node_modules
 client/.pnp
 client/.pnp.js
-
 # testing
 client/coverage
-
 # next.js
 client/.next
 client/out
-
 # production
 client/build
-
 # misc
 client/.DS_Store
 client/*.pem
-
 # debug
 client/npm-debug.log*
 client/yarn-debug.log*
 client/yarn-error.log*
-
 # local env files
-client/.env.local
-client/.env.development.local
-client/.env.test.local
-client/.env.production.local
-
+client/.env
 # vercel
 client/.vercel
-
 # typescript
 client/*.tsbuildinfo
