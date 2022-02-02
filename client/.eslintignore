@@ -3,3 +3,4 @@
 **/.next/*
 /.eslintrc.js
 /src/graphql/**
+next.config.mjs
