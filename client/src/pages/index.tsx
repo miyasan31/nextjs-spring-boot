@@ -1,10 +1,10 @@
-import Head from "next/head";
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 
 const Home: NextPage = () => {
-  const func = (e: any) => {
-    console.info("func", e);
+  const handleClick = (e: any) => {
+    console.info("handleClick", e);
   };
 
   return (
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1 onClick={func}>
+        <h1 onClick={handleClick}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
@@ -63,4 +63,5 @@ const Home: NextPage = () => {
   );
 };
 
+// eslint-disable-next-line import/no-default-export
 export default Home;
