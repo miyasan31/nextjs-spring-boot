@@ -1,0 +1,1 @@
+export { useGetSWR } from "./useGetSWR";
