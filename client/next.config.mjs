@@ -8,6 +8,7 @@ const nextConfig = {
   typescript: { ignoreDevErrors: true },
   eslint: { ignoreDuringBuilds: true },
   poweredByHeader: false,
+  pageExtensions: ["page.tsx", "page.ts"],
 };
 
 // eslint-disable-next-line import/no-default-export
