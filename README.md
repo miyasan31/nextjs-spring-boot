@@ -3,7 +3,7 @@
 0. このリポジトリをローカルに clone する
 
 ```
-> git clone https://github.com/miyasan31/spring-boot.git
+> git clone https://github.com/miyasan31/nextjs-spring-boot.git
 ```
 
 1. コンテナ立ち上げ
@@ -53,5 +53,5 @@ bash-4.4# > ./gradlew bootRun
 
 > curl http://localhost:8080 -X GET
 
-resuponse -> [{"id":1,"name":"test"}]%
+resuponse -> [{"id":1,"name":"test"}]
 ```
