@@ -1,6 +1,5 @@
 package com.example.app.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,14 +17,12 @@ import com.example.app.repository.EmployeeRepository;
 @RestController
 @RequestMapping("/api/employee")
 public class EmployeeController {
-  
   private final EmployeeRepository employeeRepository;
 
   @Autowired
   public EmployeeController(EmployeeRepository repository) {
     this.employeeRepository = repository;
   }
-
 
   @GetMapping()
   @ResponseStatus(HttpStatus.OK)
@@ -48,7 +45,7 @@ public class EmployeeController {
   }
 
   @PatchMapping()
-  @ResponseStatus(HttpStatus.OK)
+  @ResponseStatus(HttpStatus.CREATED)
   public void putEmployee(
     @RequestBody Employee employee
   ) {
@@ -62,5 +59,4 @@ public class EmployeeController {
   ) {
     employeeRepository.deleteById(id);
   }
-
 }
