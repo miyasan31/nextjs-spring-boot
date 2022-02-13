@@ -1,3 +1,12 @@
+# 学校の課題
+
+# 技術構成
+- Nextjs
+- SWR
+- Spring Boot
+- PostgreSQL
+- Docker
+
 # 環境構築
 
 0. このリポジトリをローカルに clone する
