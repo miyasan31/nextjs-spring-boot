@@ -5,14 +5,18 @@ import { Navigation } from "~/component/ui/Navigation";
 
 export const Header: VFC = () => {
   return (
-    <HeaderWrap>
-      <H1>ジョブキャン</H1>
+    <HeaderRoot>
+      <H1>
+        ジョブキャン
+        <Span>勤怠管理</Span>
+      </H1>
+
       <Navigation />
-    </HeaderWrap>
+    </HeaderRoot>
   );
 };
 
-const HeaderWrap = styled("div", ({ $theme }) => {
+const HeaderRoot = styled("div", ({ $theme }) => {
   return {
     position: "absolute",
     top: 0,
@@ -35,5 +39,12 @@ const H1 = styled("h1", ({ $theme }) => {
 
     color: `${$theme.colors.primary700}`,
     fontFamily: "sans-serif",
+  };
+});
+
+const Span = styled("span", ({ $theme }) => {
+  return {
+    color: `${$theme.colors.primary500}`,
+    fontSize: `${$theme.sizing.scale300}`,
   };
 });
