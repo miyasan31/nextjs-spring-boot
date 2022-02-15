@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { Provider as StyletronProvider } from "styletron-react";
 import { SWRConfig } from "swr";
 
+import { Layout } from "~/component/ui/Layout";
 import { getFetcher } from "~/function/fetcher";
 import { styletron } from "~/util/styletron";
 
@@ -15,7 +16,9 @@ const MyApp = (props: AppProps) => {
     >
       <StyletronProvider value={styletron}>
         <BaseProvider theme={LightTheme}>
-          <props.Component {...props.pageProps} />
+          <Layout>
+            <props.Component {...props.pageProps} />
+          </Layout>
         </BaseProvider>
       </StyletronProvider>
     </SWRConfig>
