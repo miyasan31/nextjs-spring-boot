@@ -7,6 +7,7 @@ import type { VFC } from "react";
 
 const NAV_LABEL = [
   { id: 1, label: "出勤登録", href: "/" },
+  { id: 1, label: "登退勤録", href: "/leaving_work" },
   { id: 2, label: "シフト提出", href: "/attendance/submit" },
   { id: 3, label: "スタッフ一覧", href: "/staff/list" },
 ];
