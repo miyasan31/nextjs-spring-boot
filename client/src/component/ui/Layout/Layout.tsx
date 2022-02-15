@@ -9,18 +9,25 @@ type Props = {
 
 export const Layout: VFC<Props> = ({ children }) => {
   return (
-    <>
+    <Root>
       <Header />
       <Main>{children}</Main>
-    </>
+    </Root>
   );
 };
 
+const Root = styled("div", () => {
+  return {
+    position: "relative",
+    width: "100vw",
+  };
+});
+
 const Main = styled("div", () => {
   return {
-    minHeight: "100vh",
+    height: "95vh",
+    width: "100vw",
     paddingTop: "90px",
-
     overflowY: "scroll",
   };
 });
