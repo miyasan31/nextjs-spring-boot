@@ -30,6 +30,7 @@ module.exports = {
     "react-hooks",
     "simple-import-sort",
     // "tailwindcss",
+    "baseui",
   ],
   rules: {
     semi: ["error", "always"],
@@ -78,7 +79,7 @@ module.exports = {
       },
     ],
     // propsをコンポーネントの引数で展開するか？(しない→never)
-    "react/destructuring-assignment": ["error", "never"],
+    // "react/destructuring-assignment": ["error", "never"],
 
     // react-hooksのドキュメント
     // https://www.npmjs.com/package/eslint-plugin-react-hooks
@@ -129,13 +130,13 @@ module.exports = {
       { selector: ["property", "method"], format: ["camelCase"] },
       // 変数(variable)の命名規則
       // ****************今回はuseQuery()の戻り値の変数が固定なのかもしれないから{data, error, loading}の型に従う****************
-      // {
-      // 	selector: "variable", // 変数のみ
-      // 	types: ["boolean"], // 真偽型
-      // 	format: ["PascalCase"], // パスカルケース
-      // 	prefix: ["no", "is", "has", "should"], // 接頭辞に付ける文字
-      // 	filter: { regex: "^_", match: false }, // ^と_は禁止
-      // },
+      {
+        selector: "variable", // 変数のみ
+        types: ["boolean"], // 真偽型
+        format: ["PascalCase"], // パスカルケース
+        prefix: ["no", "is", "has", "should"], // 接頭辞に付ける文字
+        filter: { regex: "^_", match: false }, // ^と_は禁止
+      },
     ],
 
     // jsx-a11yのドキュメント
@@ -152,5 +153,10 @@ module.exports = {
         aspects: ["invalidHref", "preferButton"],
       },
     ],
+
+    // baseui
+    "baseui/deprecated-theme-api": "warn",
+    "baseui/deprecated-component-api": "warn",
+    "baseui/no-deep-imports": "warn",
   },
 };
